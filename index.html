@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulk SMS and Email Sender</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/2534px-Twitter_bird_logo_2012.svg.png" alt="Logo">
+            </div>            
+            <ul>
+                <li><a href="#" id="loginLink">შესვლა</a></li>
+                <li><a href="#" id="registerLink">რეგისტრაცია</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>დაწერე ესემესი და იმელიმესი</h1>
+        <textarea id="smsText" placeholder="SMS აქ"></textarea>
+        <textarea id="emailText" placeholder="Email აქ"></textarea>
+        <button id="sendButton">გაგზავნა (ოღონდ ჯერ არსად არ წავა :)</button>
+    </div>
+    
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <h2>შესვლა</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="სახელი" />
+                <input type="password" placeholder="პაროლი" />
+                <button type="submit">შესვლა</button>
+            </form>
+            <a href="#" class="close-popup" id="closeLoginPopup">დახურვა</a>
+        </div>
+    </div>
+    
+    <div class="popup" id="registerPopup">
+        <div class="popup-content">
+            <h2>რეგისტრაცია</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="სახელი" />
+                <input type="email" placeholder="მეილი" />
+                <input type="password" placeholder="პაროლი" />
+                <button type="submit">რეგისტრაცია</button>
+            </form>
+            <a href="#" class="close-popup" id="closeRegisterPopup">დახურვა</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 ესემესერი. ყველა წესი დარღვეულია.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
